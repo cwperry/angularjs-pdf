@@ -75,13 +75,13 @@
         };
 
         scope.zoomIn = function() {
-          scale = parseFloat(scale) + 0.2;
+          scale = (parseFloat(scale) + 0.2).toFixed(2);
           scope.renderPage(scope.pageToDisplay);
           return scale;
         };
 
         scope.zoomOut = function() {
-          scale = parseFloat(scale) - 0.2;
+          scale = (parseFloat(scale) - 0.2).toFixed(2);
           scope.renderPage(scope.pageToDisplay);
           return scale;
         };
